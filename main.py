@@ -59,13 +59,4 @@ with mp_hands.Hands(min_detection_confidence=0.8, min_tracking_confidence=0.5) a
                             score += 1
                             enemy(image)
 
-        plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
-        plt.show()
-
-        if cv2.waitKey(10) & 0xFF == ord('q'):
-            print(score)
-            break
-
-video.release()
-cv2.destroyAllWindows()
 
