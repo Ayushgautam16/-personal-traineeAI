@@ -1,4 +1,9 @@
-
+import mediapipe as mp
+import cv2
+import numpy as np
+import time
+import random
+from matplotlib import pyplot as plt
 
 mp_drawing = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
